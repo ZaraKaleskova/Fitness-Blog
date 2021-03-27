@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Main from '../src/components/main.js';
 
 function App() {
   return (
-    <div className="App">
+    <Main/>
+    /* <div className="App">
       <header className="App-header">
         
         <p>
@@ -18,7 +20,7 @@ function App() {
          The Fitness app
         </a>
       </header>
-    </div>
+    </div> */
   );
 }
 
