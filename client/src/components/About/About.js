@@ -1,8 +1,7 @@
 import style from '../assets/css/main.css';
 
 
-function About() {
-  return (
+const About = () => (
     <body class={style.About}>
 
 	
@@ -120,6 +119,5 @@ function About() {
 
 	</body>
   );
-}
 
 export default About;
