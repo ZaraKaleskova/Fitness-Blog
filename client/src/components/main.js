@@ -9,73 +9,23 @@ import Banner from './Banner/Banner';
 import Training from './Training/Training';
 import Eating from './Eating/Eating';
 import Competing from './Competing/Competing';
+import Articles from './Articles/Articles';
 
 function Main() {
     return (
         <body class={styleMedia.Main}>
-
-
             <div id="page-wrapper">
-
-
                <Header />                
                <Menu />
                 <Banner />
-
-              
-
-
                 <section id="wrapper">
 
                     <Training />
                     <Eating />
                     <Competing />
-                  
-        
-      
-                   
-
 
                     <section id="four" class="wrapper alt style1">
-                        <div class="inner">
-                            <h2 class="major">Knowledge is power</h2>
-                            <p>I firmly believe in giving back to the community as much as possible, while promoting a healthy and active way of living. You can find different articles that cover a variety of subjects. New articles await you every Monday and Thursday.</p>
-                            <section class="features">
-                                <article>
-                                    <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-                                    <h3 class="major">Training</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                    <a href="#" class="special">Learn more</a>
-                                </article>
-                                <article>
-                                    <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-                                    <h3 class="major">Nutrition</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                    <a href="#" class="special">Learn more</a>
-                                </article>
-                                <article>
-                                    <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-                                    <h3 class="major">Psychology of Training</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                    <a href="#" class="special">Learn more</a>
-                                </article>
-                                <article>
-                                    <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                                    <h3 class="major">Other Topics</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                    <a href="#" class="special">Learn more</a>
-                                </article>
-                            </section>
-                            <ul class="actions">
-                                {/* <Link component={About}>
-                                    <button type="button">
-                                        Click Me!     </button>
-                                </Link> */}
-
-                                {/* <Button path="/about" component={About}> Click Me</Button> */}
-
-                            </ul>
-                        </div>
+                    <Articles />
                     </section>
 
                 </section>
