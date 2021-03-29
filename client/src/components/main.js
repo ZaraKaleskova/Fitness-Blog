@@ -1,8 +1,14 @@
 import style from './assets/css/main.css';
 import { Route, Link, NavLink, Redirect, Switch } from 'react-router-dom';
-import About from './About/About';
+// import About from './About/About';
 import {withRouter} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import Header from './Header/Header';
+import Menu from './Menu/menu';
+import Banner from './Banner/Banner';
+import Training from './Training/Training';
+import Eating from './Eating/Eating';
+import Competing from './Competing/Competing';
 
 function Main() {
     return (
@@ -12,102 +18,50 @@ function Main() {
             <div id="page-wrapper">
 
 
-                <header id="header" class="alt">
-                    <h1><a href="index.html">Solid State</a></h1>
-                    <nav>
-                        <a href="#menu">Menu</a>
-                    </nav>
-                </header>
+               <Header />                
+               <Menu />
+                <Banner />
 
-
-                <nav id="menu">
-                    <div class="inner">
-                        <h2>Menu</h2>
-                        <ul class="links">
-                            <li><a href="index.html">Home</a></li>
-
-                            <li><a href="#">Log In</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                        <a href="#" class="close">Close</a>
-                    </div>
-                </nav>
-
-
-                <section id="banner">
-                    <div class="inner">
-                        <div class="logo"><span class="icon fa-gem"></span></div>
-                        <h2>This is Solid State</h2>
-
-                    </div>
-                </section>
+              
 
 
                 <section id="wrapper">
 
-
-                    <section id="one" class="wrapper spotlight style1">
-                        <div class="inner">
-                            <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                            <div class="content">
-                                <h2 class="major">Magna arcu feugiat</h2>
-                                <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                <a href="#" class="special">Learn more</a>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <section id="two" class="wrapper alt spotlight style2">
-                        <div class="inner">
-                            <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-                            <div class="content">
-                                <h2 class="major">Tempus adipiscing</h2>
-                                <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                <a href="#" class="special">Learn more</a>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <section id="three" class="wrapper spotlight style3">
-                        <div class="inner">
-                            <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-                            <div class="content">
-                                <h2 class="major">Nullam dignissim</h2>
-                                <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                                <a href="#" class="special">Learn more</a>
-                            </div>
-                        </div>
-                    </section>
+                    <Training />
+                    <Eating />
+                    <Competing />
+                  
+        
+      
+                   
 
 
                     <section id="four" class="wrapper alt style1">
                         <div class="inner">
-                            <h2 class="major">Vitae phasellus</h2>
-                            <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                            <h2 class="major">Knowledge is power</h2>
+                            <p>I firmly believe in giving back to the community as much as possible, while promoting a healthy and active way of living. You can find different articles that cover a variety of subjects. New articles await you every Monday and Thursday.</p>
                             <section class="features">
                                 <article>
                                     <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-                                    <h3 class="major">Sed feugiat lorem</h3>
+                                    <h3 class="major">Training</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                     <a href="#" class="special">Learn more</a>
                                 </article>
                                 <article>
                                     <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-                                    <h3 class="major">Nisl placerat</h3>
+                                    <h3 class="major">Nutrition</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                     <a href="#" class="special">Learn more</a>
                                 </article>
                                 <article>
                                     <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-                                    <h3 class="major">Ante fermentum</h3>
+                                    <h3 class="major">Psychology of Training</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                     <a href="#" class="special">Learn more</a>
                                 </article>
                                 <article>
                                     <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                                    <h3 class="major">Fusce consequat</h3>
+                                    <h3 class="major">Other Topics</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                     <a href="#" class="special">Learn more</a>
                                 </article>
@@ -118,7 +72,7 @@ function Main() {
                                         Click Me!     </button>
                                 </Link> */}
 
-                                <Button path="/about" component={About}> Click Me</Button>
+                                {/* <Button path="/about" component={About}> Click Me</Button> */}
 
                             </ul>
                         </div>
@@ -130,7 +84,7 @@ function Main() {
                 <section id="footer">
                     <div class="inner">
                         <h2 class="major">Get in touch</h2>
-                        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                        <p>Send a quick message about training plans, nutritional programs or any other inquiry. You can also give a call the number below for more information or potential partnerships.</p>
                         <form method="post" action="#">
                             <div class="fields">
                                 <div class="field">
@@ -152,18 +106,18 @@ function Main() {
                         </form>
                         <ul class="contact">
                             <li class="icon solid fa-home">
-                                Untitled Inc<br />
-                                1234 Somewhere Road Suite #2894<br />
-                                Nashville, TN 00000-0000
+                                Sports Center Kuntosumppu<br />
+                                Karjalankatu 29, 26100 Rauma<br />
+                                Finland
                             </li>
-                            <li class="icon solid fa-phone">(000) 000-0000</li>
+                            <li class="icon solid fa-phone">+35828221639</li>
                             <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
                             <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
                             <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
                             <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
                         </ul>
                         <ul class="copyright">
-                            <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            <li>&copy; Strength And Aesthetics Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                         </ul>
                     </div>
                 </section>
