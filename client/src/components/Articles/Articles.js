@@ -16,14 +16,8 @@ const Articles = () =>
                 <OtherArticle />
         </section>
         <ul class="actions">
-            {/* <Link component={About}>
-                <button type="button">
-                    Click Me!     </button>
-            </Link> */}
-
-            {/* <Button path="/about" component={About}> Click Me</Button> */}
-
-        </ul>
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
     </div>
     );
    

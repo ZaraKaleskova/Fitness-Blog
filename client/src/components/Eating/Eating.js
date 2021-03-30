@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 const Eating = () =>
 {
     return(
@@ -8,7 +10,7 @@ const Eating = () =>
             <div class="content">
                 <h2 class="major">Eat like a champion</h2>
                 <p>Don't leave nutrition to chance. Your body deserves the best fuel to preform at its best rate. Nutrition is of equal, if not bigger importance than training. Find your prefect program today. Explore the different options by clicking the button below.</p>
-                <a href="#" class="special">Learn more</a>
+                <Link to="/nutrition" class="special">Learn more</Link>
             </div>
         </div>
     </section>

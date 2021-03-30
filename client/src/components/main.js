@@ -9,28 +9,30 @@ import Eating from './Eating/Eating';
 import Competing from './Competing/Competing';
 import Articles from './Articles/Articles';
 
+
+
 function Main() {
     return (
         <body class={styleMedia.Main}>
             <div id="page-wrapper">
-               <Header />                
-               <Menu />
+                <Header />
+                <Menu />
                 <Banner />
 
                 <section id="wrapper">
 
-        <Training />
-        <Eating />
-        <Competing />
+                    <Training />
+                    <Eating />
+                    <Competing />
 
-        <section id="four" class="wrapper alt style1">
-          
-        </section>
+                    <section id="four" class="wrapper alt style1">
+                        <Articles />
+                    </section>
 
-    </section>
-             
+                </section>
+
                 <Footer />
-             
+
 
             </div>
 
