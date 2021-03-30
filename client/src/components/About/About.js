@@ -32,12 +32,7 @@ const About = () => (
 
 			
 					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2>Generic</h2>
-								<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
-							</div>
-						</header>
+		
 
 				
 							<div class="wrapper">
@@ -50,21 +45,6 @@ const About = () => (
 
 									<h3 class="major">Vitae phasellus</h3>
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
 
 								</div>
 							</div>
