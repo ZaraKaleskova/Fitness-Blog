@@ -1,4 +1,4 @@
-import workingout from './workingout.png';
+import workingout from './workingOut.png';
 const TrainingArticle = () =>
 {
     return(
