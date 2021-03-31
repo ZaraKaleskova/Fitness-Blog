@@ -1,5 +1,3 @@
-import style from './assets/css/main.css';
-import Button from '@material-ui/core/Button';
 import Header from './Header/Header';
 import Menu from './Menu/menu';
 import Banner from './Banner/Banner';
@@ -13,7 +11,7 @@ import Articles from './Articles/Articles';
 
 function Main() {
     return (
-        <body class={styleMedia.Main}>
+        <body className={styleMedia.Main}>
             <div id="page-wrapper">
                 <Header />
                 <Menu />
@@ -36,8 +34,8 @@ function Main() {
 
             </div>
 
-
-
+            <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        
         </body>
     );
 }

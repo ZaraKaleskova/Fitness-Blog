@@ -4,10 +4,10 @@ const TrainingArticle = () =>
     return(
 
         <article>
-        <a href="#" class="image"><img src={workingout} alt="" /></a>
+        <a href="#" className="image"><img src={workingout} alt="" /></a>
         <h3 class="major">Training</h3>
         <p>Articles about strength training and other functional sports.</p>
-        <a href="#" class="special">Learn more</a>
+        <a href="#" className="special">Learn more</a>
     </article>
 
 

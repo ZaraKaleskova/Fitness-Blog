@@ -12,6 +12,13 @@ const About = () => (
 						<h1><a href="index.html">Solid State</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Generic</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
 						</nav>
 					</header>
 

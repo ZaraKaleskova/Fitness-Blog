@@ -6,6 +6,7 @@ import About from './components/About/About';
 import EatingInfo from './components/EatingInfo/EatingInfo';
 import TrainingInfo from './components/TrainingInfo/TrainingInfo';
 import CompetitionInfo from './components/CompetitionInfo/CompetitionInfo';
+import LogUser from './components/Login/LogUser';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/competing">
             <CompetitionInfo />
+          </Route>
+          <Route path="/login">
+            <LogUser />
           </Route>
       </Switch>
      

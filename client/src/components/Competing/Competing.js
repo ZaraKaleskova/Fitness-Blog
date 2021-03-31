@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import winning from './winning.png';
+import {Component} from 'react'; 
 
 const Competing = () =>
 {

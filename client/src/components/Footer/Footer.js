@@ -2,23 +2,35 @@
 
 const Footer = () =>
 {
+
+    const onSubmitHandler = function(e) {
+        e.preventDefault();
+        console.log(e.target.name.value);
+        console.log(e.target.email.value);
+        console.log(e.target.message.value);
+    };
+
+    const onUsernameChange = (e) => {
+        console.log(e.target.value);
+    };
+
     return(        
         <section id="footer">
-        <div class="inner">
-            <h2 class="major">Get in touch</h2>
+        <div className="inner">
+            <h2 className="major">Get in touch</h2>
             <p>Send a quick message about training plans, nutritional programs or any other inquiry. You can also give a call the number below for more information or potential partnerships.</p>
-            <form method="post" action="#">
-                <div class="fields">
+            <form onSubmit={onSubmitHandler}>
+                <div className="fields">
                     <div class="field">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" />
+                        <label htmlFor="name">Name</label>
+                        <input type="text" name="name" id="name" onChange={onUsernameChange} />
                     </div>
                     <div class="field">
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input type="email" name="email" id="email" />
                     </div>
                     <div class="field">
-                        <label for="message">Message</label>
+                        <label htmlFor="message">Message</label>
                         <textarea name="message" id="message" rows="4"></textarea>
                     </div>
                 </div>
