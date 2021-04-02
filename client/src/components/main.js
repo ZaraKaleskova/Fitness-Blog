@@ -23,9 +23,9 @@ function Main() {
                     <Eating />
                     <Competing />
 
-                    <section id="four" class="wrapper alt style1">
+                    {/* <section id="four" class="wrapper alt style1">
                         <Articles />
-                    </section>
+                    </section> */}
 
                 </section>
 
