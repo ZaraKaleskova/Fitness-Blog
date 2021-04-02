@@ -1,7 +1,5 @@
-import firebase from 'firebase';
-
-
-  var firebaseConfig = {
+import firebase from 'firebase'
+var firebaseConfig = {
     apiKey: "AIzaSyCktVfWWu_vrHw1bcs0-snDtBx8cty841s",
     authDomain: "login-e579a.firebaseapp.com",
     projectId: "login-e579a",
@@ -9,9 +7,8 @@ import firebase from 'firebase';
     messagingSenderId: "823490620369",
     appId: "1:823490620369:web:eefd3d4aec0e5020b5cef0"
   };
+  
 
- const fire = firebase.initializeApp(firebaseConfig);
+const db=firebase.firestore();
 
- const store = firebase.firestore();
-
- export default fire;
+export default db;

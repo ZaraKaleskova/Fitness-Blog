@@ -108,6 +108,8 @@
     padding: 20px 40px;
     display: flex;
     align-items: center;
+    margin-top: -80px;
+    position: absolute;
     justify-content: space-between;
   }
   

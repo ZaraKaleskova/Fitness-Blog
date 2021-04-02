@@ -4,11 +4,11 @@ import style from '../assets/css/main.css';
 const About = () => (
     <body class={style.About}>
 
+			
 	
 			<div id="page-wrapper">
 					<section id="wrapper">
 		
-
 				
 							<div class="wrapper">
 								<div class="inner">

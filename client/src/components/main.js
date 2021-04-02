@@ -1,5 +1,3 @@
-import Header from './Header/Header';
-import Menu from './Menu/menu';
 import Footer from './Footer/Footer';
 import Training from './Training/Training';
 import Eating from './Eating/Eating';
@@ -12,9 +10,8 @@ function Main() {
     return (
         <body className={styleMedia.Main}>
             <div id="page-wrapper">
-                <Header />
-                <Menu />
                
+              
 
                 <section id="wrapper">
 

@@ -7,10 +7,13 @@ import EatingInfo from './components/EatingInfo/EatingInfo';
 import TrainingInfo from './components/TrainingInfo/TrainingInfo';
 import CompetitionInfo from './components/CompetitionInfo/CompetitionInfo';
 import LogUser from './components/Login/LogUser';
+import BlogArticles from './components/BlogArticles/BlogArticles';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <Router>
+        <Header />
       <Switch>
           <Route exact path="/">
             <Main/>
@@ -30,9 +33,14 @@ function App() {
           <Route path="/login">
             <LogUser />
           </Route>
+          <Route path="/blog">
+            <BlogArticles />
+          </Route>
       </Switch>
      
     </Router>
+
+
 
   );
 }
