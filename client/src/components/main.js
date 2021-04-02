@@ -1,6 +1,5 @@
 import Header from './Header/Header';
 import Menu from './Menu/menu';
-import Banner from './Banner/Banner';
 import Footer from './Footer/Footer';
 import Training from './Training/Training';
 import Eating from './Eating/Eating';
@@ -15,7 +14,7 @@ function Main() {
             <div id="page-wrapper">
                 <Header />
                 <Menu />
-                <Banner />
+               
 
                 <section id="wrapper">
 

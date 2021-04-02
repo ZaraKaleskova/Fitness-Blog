@@ -1,62 +1,65 @@
+import emailjs from "emailjs-com";
+import React from "react";
+import ContactInfo from './ContactInfo';
 
+const Footer = () => {
+  function sendEmail(e) {
+    e.preventDefault();
 
-const Footer = () =>
-{
+    emailjs
+      .sendForm(
+        "service_kcd5gms",
+        "template_1va3foe",
+        e.target,
+        "user_2x6ewZiOj0mHbbt8GcG6r"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
 
-    const onSubmitHandler = function(e) {
-        e.preventDefault();
-        console.log(e.target.name.value);
-        console.log(e.target.email.value);
-        console.log(e.target.message.value);
-    };
-
-    const onUsernameChange = (e) => {
-        console.log(e.target.value);
-    };
-
-    return(        
-        <section id="footer">
-        <div className="inner">
-            <h2 className="major">Get in touch</h2>
-            <p>Send a quick message about training plans, nutritional programs or any other inquiry. You can also give a call the number below for more information or potential partnerships.</p>
-            <form onSubmit={onSubmitHandler}>
-                <div className="fields">
-                    <div class="field">
+  return (
+    <section id="footer">
+      <div className="inner">
+        <h2 className="major">Get in touch</h2>
+        <p>
+          Send a quick message about training plans, nutritional programs or any
+          other inquiry. You can also give a call the number below for more
+          information or potential partnerships.
+        </p>
+        <form onSubmit={sendEmail}>
+          <div className="fields">
+                    <div className="field">
                         <label htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name" onChange={onUsernameChange} />
+                        <input type="text" name="name" id="name" />
                     </div>
-                    <div class="field">
+                    <div className="field">
                         <label htmlFor="email">Email</label>
                         <input type="email" name="email" id="email" />
                     </div>
-                    <div class="field">
+                    <div className="field">
+                        <label htmlFor="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" />
+                    </div>
+                    <div className="field">
                         <label htmlFor="message">Message</label>
                         <textarea name="message" id="message" rows="4"></textarea>
                     </div>
                 </div>
-                <ul class="actions">
+                <ul className="actions">
                     <li><input type="submit" value="Send Message" /></li>
-                </ul>
-            </form>
-            <ul class="contact">
-                <li class="icon solid fa-home">
-                    Sports Center Kuntosumppu<br />
-                    Karjalankatu 29, 26100 Rauma<br />
-                    Finland
-                </li>
-                <li class="icon solid fa-phone">+35828221639</li>
-                <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-                <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-                <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-                <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Strength And Aesthetics Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
+                </ul>     
+        </form>
+        <ContactInfo />
+      </div>
     </section>
-    );
-   
-}
+  );
+};
 
 export default Footer;
