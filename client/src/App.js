@@ -35,7 +35,7 @@ function App() {
           </Route>
           <Route path="/blog">
             <BlogArticles />
-          </Route>
+          </Route>          
       </Switch>
      
     </Router>

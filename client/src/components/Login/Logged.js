@@ -1,3 +1,4 @@
+import Articles from '../Articles/Articles';
 import React from 'react';
 
 const Logged = ({handleLogout}) => {
@@ -9,7 +10,12 @@ const Logged = ({handleLogout}) => {
                 </h2>
                 <button onClick={handleLogout}>Logout</button>
             </nav>
+            <>
+
+            <Articles />
+            </>
         </section>
+     
     );
 };
 
