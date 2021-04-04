@@ -1,22 +1,20 @@
-import Articles from '../Articles/Articles';
-import React from 'react';
 
-const Logged = ({handleLogout}) => {
+import React from 'react';
+import Articles from '../Articles/Articles';
+
+const Logged = ({handleLogout}, {username}) => {
     return (
         <section className="logged">
             <nav>
-                <h2>
-                    Welcome
-                </h2>
+            <h1> Hello {username} here</h1>
+            
                 <button onClick={handleLogout}>Logout</button>
             </nav>
-            <>
-
-            <Articles />
-            </>
+           
         </section>
      
     );
 };
 
 export default Logged;
+

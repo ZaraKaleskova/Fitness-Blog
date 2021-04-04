@@ -3,6 +3,7 @@ import fire from './fire';
 import './LoginStyle.css';
 import Logged from './Logged';
 import Login from './Login';
+import Articles from '../Articles/Articles';
 
 const LogUser = () => {
     const [user, setUser] = useState("");
@@ -59,10 +60,13 @@ const LogUser = () => {
             });
     };
 
+    
+
     const handleLogout = () => {
         fire.auth().signOut();
     };
 
+    
     const authListener = () => {
         fire.auth().onAuthStateChanged((user) => {
             if (user) {
@@ -75,14 +79,23 @@ const LogUser = () => {
     };
 
     useEffect(() => {
+        fire.auth().onAuthStateChanged(setUser);
+      }, []);
+    
+  const authInfo = {
+        username: user?.email,
+      };
+    useEffect(() => {
         authListener();
     }, []);
 
+      
 
     return (
         <div className="App">
         {user ? (
-            <Logged handleLogout={handleLogout} />
+            <Logged handleLogout={handleLogout} {...authInfo} />
+            
         ) : (
             <Login
             email={email}
@@ -97,8 +110,17 @@ const LogUser = () => {
             passwordError={passwordError}
             />
         )}
+        <Articles {...authInfo} />
+
         </div>
+        
+
+      
     );
 };
+
+
+
+export var currentUser = fire.auth().currentUser;
 
 export default LogUser;

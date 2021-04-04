@@ -34,7 +34,7 @@
 
 import React from "react";
 
-import db from "./thebase.config";
+import db from './thebase.config';
 import { BlogInput } from "./BlogInput";
 
 function Blog() {
@@ -42,14 +42,24 @@ function Blog() {
   const [newSpellName, setNewSpellName] = React.useState();
   const [newDescription, setNewDescription] = React.useState();
 
-  React.useEffect(() => {
-    const fetchData = async () => {
-      
-      const data = await db.collection("Blogs").get();
-      setSpells(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));
-    };
-    fetchData();
+  // React.useEffect(() => {
+  //   const fetchData = async () => {      
+  //     const data = await db.collection("Blogs").get();
+  //     setSpells(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   fetchData();
+  // }, []);
+
+
+  React.useEffect(() =>{
+    return db.collection("Blogs").onSnapshot(snapshot => {
+      const blogdata = [];
+      snapshot.forEach(doc => blogdata.push({ ...doc.data(), id: doc.id}));
+      setSpells(blogdata);
+    });
   }, []);
+
+
 
   const onCreate = () => {
    

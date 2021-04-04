@@ -1,4 +1,5 @@
-import firebase from 'firebase'
+import firebase from 'firebase';
+
 var firebaseConfig = {
     apiKey: "AIzaSyCktVfWWu_vrHw1bcs0-snDtBx8cty841s",
     authDomain: "login-e579a.firebaseapp.com",
@@ -9,6 +10,6 @@ var firebaseConfig = {
   };
   
 
-const db=firebase.firestore();
+const db = firebase.firestore();
 
 export default db;

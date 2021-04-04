@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { createStore, applyMiddleware } from 'redux'
+import rootReducer from './store/reducer/rootReducer';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <React.StrictMode>
-  <Router>
-    <App />
-  </Router>
-  </React.StrictMode>,
+<Provider store={store}><App /></Provider>,
   document.getElementById('root')
 );
 

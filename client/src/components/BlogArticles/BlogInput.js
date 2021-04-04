@@ -1,6 +1,6 @@
 
 import React from "react";
-import db from "./thebase.config";
+import db from './thebase.config';
 
 export const BlogInput = ({ spell }) => {
   const [name, setName] = React.useState(spell.name);

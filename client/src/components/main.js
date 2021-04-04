@@ -2,7 +2,7 @@ import Footer from './Footer/Footer';
 import Training from './Training/Training';
 import Eating from './Eating/Eating';
 import Competing from './Competing/Competing';
-import Articles from './Articles/Articles';
+
 
 
 
@@ -30,7 +30,7 @@ function Main() {
 
             </div>
 
-            <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+           
         
         </body>
     );
