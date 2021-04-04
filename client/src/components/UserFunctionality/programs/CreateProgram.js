@@ -2,6 +2,9 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {createProgram} from '../../../store/actions/programActions'
+import { Redirect } from 'react-router-dom';
+
+
 
 class CreateProgram extends Component {
   state = {
@@ -15,9 +18,13 @@ class CreateProgram extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    // console.log(this.state);
+    this.props.createProgram(this.state);
+    this.props.history.push('/dashboard');
   }
   render() {
+    const { auth } = this.props;
+    if (!auth.uid) return <Redirect to='/signin' /> 
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
@@ -39,10 +46,16 @@ class CreateProgram extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth
+  }
+}
+
 const mapDispatchToProps = dispatch => {
   return {
     createProgram: (program) => dispatch(createProgram(program))
   }
 }
 
-export default connect(null, mapDispatchToProps)(CreateProgram);
+export default connect(mapStateToProps, mapDispatchToProps)(CreateProgram);

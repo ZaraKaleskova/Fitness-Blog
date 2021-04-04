@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-        <Header />
+        <Navbar />
       <Switch>
           <Route exact path="/">
             <Main/>
