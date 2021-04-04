@@ -4,75 +4,34 @@ const CompetitionInfo = () => {
         <header>
           <div class="inner">
             <h2>Competition Coaching</h2>
-            <p>Want to eat well and feel better? Your journey starts here!</p>
+            <p>A Different Kind of Contest Prep!</p>
           </div>
         </header>
   
         <div class="wrapper">
           <div class="inner">
             <section>
-              <h3 class="major">All about nutrition</h3>
+              <h3 class="major">All about competition coaching</h3>
               <p>
                 <b>
-                  Learn how to find freedom and balance via nutrition, exercise,
-                  and a healthy lifestyle through one-on-one customized
-                  nonrestrictive macro-based nutrition coaching.
+                Whether your goals are competitive or not, the guiding principles of bodybuilding can help you.  It’s a focus on nutrition, training intensity, and consistency.  I make no illusions, I know that what I ask my clients to do is hard stuff – but if you’re focused and determined, it doesn’t really matter how hard it is.  And with the right coach in your corner it can make all the difference in achieving your contest prep or lifestyle transformation goals.
                 </b>
               </p>
-              <h4>Blockquote</h4>
+             
               <blockquote>
-                “Time and health are two precious assets that we don’t recognize
-                and appreciate until they have been depleted.” – Denis Waitley
+              “Compete with yourself until the only one left to compete with is yourself.”
+― Matshona Dhliwayo
               </blockquote>
-              <p>
-                Tired of dieting, cutting out entire food groups, and an endless
-                amount of hours in the gym to not see any results? Maybe you
-                struggle to find your food freedom and balance in your life. Or
-                you want to be able to eat as much food as possible while still
-                feeling and looking amazing. I have totally been there and I am
-                here to help you live your best life!
-              </p>
+              
             </section>
   
             <section>
               <h3 class="major">WHAT TO EXPECT</h3>
               <div class="row">
                 <p>
-                  We spend 12-18+ years in school, yet we’re NEVER taught some of
-                  the basics. How much to eat, how to exercise appropriately for
-                  the body we want, to love ourselves and say positive things when
-                  we look in the mirror, the importance of nutrient-dense diet,
-                  sleep, proper digestion and a happy gut, blood sugar balance,
-                  hormone and menstrual health, and balancing stress. So I’m
-                  changing the game and empowering people to find freedom via
-                  nutrition, exercise, and a healthy lifestyle.
-                  <p>Here is how we will work together: </p>
-                </p>
-                <div class="col-8 col-2-medium">
-                  <ul class="alt">
-                    <li>A holistic approach to food, health, and wellness.</li>
-                    <li>
-                      A nonrestrictive macro-based eating approach. You’ll be
-                      provided customized goals on how much protein, carb, and fat
-                      to eat each day.
-                    </li>
-                    <li>
-                      Keeping tabs on food quality, hunger, digestion, bathroom
-                      stuff, energy levels, menstrual health, hormone health,
-                      sleep, and stress to make sure your body functioning to its
-                      full capacity.
-                    </li>
-                    <li>
-                      Hydration suggestions, supplement suggestions, and
-                      suggestions on how to time your food (in relation to
-                      workouts) to ensure you feel great in the gym.
-                    </li>
-                    <li>
-                      Access to me via phone, email, and text along with bi-weekly
-                      phone check-ins.
-                    </li>
-                  </ul>
-                </div>
+                What does a coach do?  Planning.  Feedback.  Accountability.  Keeping you sharp and focused.  Being available for questions.  The strategy involved in coaching someone for a bodybuilding competition or a lifestyle transformation is important but there’s so much more involved in the process that other coaches simply don’t sufficiently focus on.  I take the title of “coach” seriously – my job is to teach, to help you achieve your short-term goals but also make you better in the long-term. </p>
+                
+                
               </div>
   
             </section>

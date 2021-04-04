@@ -4,7 +4,7 @@
 
 💼 Business enquiries: The web application allows visitors to send emails with their enquiries to an exsiting account 
 
-🔨 Built With: HTML CSS JS SVG React Redux Firebase
+🔨 Built With: HTML CSS Materialize JS SVG React Redux Firebase
 
 🔮 What does the future hold: The application will be connected to a commerce system and will allow transactions for the offered services. Private user area will also be extended, offering more user functionalities.
 

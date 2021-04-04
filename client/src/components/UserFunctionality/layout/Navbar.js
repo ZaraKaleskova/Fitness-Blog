@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
 import {connect} from 'react-redux'
-import Dashboard from '../dashboard/Dashboard'
+import logo from './logo.png';
 
 const Navbar = (props) => {
   const { auth, profile } = props;
@@ -11,10 +11,11 @@ const Navbar = (props) => {
   const links = auth.uid ? <SignedInLinks profile={profile} />  : <SignedOutLinks /> ;
 
   return (
-    <nav className="nav-wrapper grey darken-3">
-      <div className="container">
-        <Link to='/' className="brand-logo">MarioPlan</Link>
-        <Link to='/dashboard' className="brand-logo">MarioPlan</Link>
+    <nav className="navigation">
+      <div className="navigationContainer">
+        <Link to='/' className="brand-logo"><img src={logo} /></Link>
+        <Link to='/about' className="brand-logo">About</Link>
+        <Link to='/dashboard' className="brand-logo">Workouts</Link>
         {auth.isLoaded && links}
       </div>
     </nav>
