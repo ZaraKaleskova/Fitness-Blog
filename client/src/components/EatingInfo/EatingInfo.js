@@ -25,12 +25,7 @@ const EatingInfo = () => {
               and appreciate until they have been depleted.” – Denis Waitley
             </blockquote>
             <p>
-              Tired of dieting, cutting out entire food groups, and an endless
-              amount of hours in the gym to not see any results? Maybe you
-              struggle to find your food freedom and balance in your life. Or
-              you want to be able to eat as much food as possible while still
-              feeling and looking amazing. I have totally been there and I am
-              here to help you live your best life!
+            Tired of dieting, cutting out entire food groups, and an endless amount of hours in the gym to not see any results? Maybe you struggle to find your food freedom and balance in your life. Or you want to be able to eat as much food as possible while still feeling and looking amazing. I have totally been there and I am here to help you live your best life!
             </p>
           </section>
 
@@ -57,8 +52,7 @@ const EatingInfo = () => {
                     to eat each day.
                   </li>
                   <li>
-                    Keeping tabs on food quality, hunger, digestion, bathroom
-                    stuff, energy levels, menstrual health, hormone health,
+                    Keeping tabs on food quality, hunger, digestion, energy levels, menstrual health, hormone health,
                     sleep, and stress to make sure your body functioning to its
                     full capacity.
                   </li>

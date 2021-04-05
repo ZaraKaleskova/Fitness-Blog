@@ -11,12 +11,10 @@ const TrainingInfo = () => {
         <div class="wrapper">
           <div class="inner">
             <section>
-              <h3 class="major">All about nutrition</h3>
+              <h3 class="major">All about training</h3>
               <p>
                 <b>
-                  Learn how to find freedom and balance via nutrition, exercise,
-                  and a healthy lifestyle through one-on-one customized
-                  nonrestrictive macro-based nutrition coaching.
+                Online training coaching designed to get you to your health and fitness goals with maximum confidence.
                 </b>
               </p>
               <h4>Blockquote</h4>
@@ -24,17 +22,10 @@ const TrainingInfo = () => {
                 “Time and health are two precious assets that we don’t recognize
                 and appreciate until they have been depleted.” – Denis Waitley
               </blockquote>
-              <p>
-                Tired of dieting, cutting out entire food groups, and an endless
-                amount of hours in the gym to not see any results? Maybe you
-                struggle to find your food freedom and balance in your life. Or
-                you want to be able to eat as much food as possible while still
-                feeling and looking amazing. I have totally been there and I am
-                here to help you live your best life!
-              </p>
+              
             </section>
   
-            <section>
+            {/* <section>
               <h3 class="major">WHAT TO EXPECT</h3>
               <div class="row">
                 <p>
@@ -57,8 +48,7 @@ const TrainingInfo = () => {
                       to eat each day.
                     </li>
                     <li>
-                      Keeping tabs on food quality, hunger, digestion, bathroom
-                      stuff, energy levels, menstrual health, hormone health,
+                      Keeping tabs on food quality, hunger, digestion, energy levels, menstrual health, hormone health,
                       sleep, and stress to make sure your body functioning to its
                       full capacity.
                     </li>
@@ -77,7 +67,7 @@ const TrainingInfo = () => {
   
             </section>
   
-            
+             */}
   
             
             <section>
@@ -89,14 +79,10 @@ const TrainingInfo = () => {
                 <span class="image left">
                   <img src="images/pic01.jpg" alt="" />
                 </span>
-                Nutrition coaching will be a macro-based food approach. As we work
-                together, we will make adjustments to your calories and macros
-                based on body composition, hunger cues, activity levels, and any
-                feedback given by you to find your ideal amount of food to live
-                your best life. After working with me, you will never diet again,
-                have to cut out any food groups, and be a slave to the gym to see
-                results. You will learn what food works best to fuel your body and
-                find balance in your life, each and every day.
+                Training will be personally tailored. As we work
+                together, we will make adjustments to your workouts
+                based on body composition, activity levels and any
+                feedback given by you to find your ideal amount training volume. 
               </p>
               <p>
                 <span class="image right">

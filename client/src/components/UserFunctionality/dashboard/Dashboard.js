@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ProgramList from '../programs/ProgramList'
-import Notifications from './Notifications'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
@@ -12,14 +11,11 @@ class Dashboard extends Component {
     const { programs, auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
-      <div className="dashboard container">
+      <div className="workouts">
         <div className="row">
           <div className="col s12 m6">
             <ProgramList programs={programs}/>
-          </div>
-          <div className="col s12 m5 offset-m1">
-            <Notifications />
-          </div>
+          </div>         
         </div>
       </div>
     )

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const ProgramList = ({programs}) => {
   return (
-    <div className="program-list section">
+    <div className="programList">
     { programs && programs.map(program => {
       return (
         <Link to={'/program/' + program.id}  key={program.id}>

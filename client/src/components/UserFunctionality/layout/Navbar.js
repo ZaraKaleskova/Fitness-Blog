@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Profiler } from 'react'
 import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
@@ -13,9 +13,15 @@ const Navbar = (props) => {
   return (
     <nav className="navigation">
       <div className="navigationContainer">
-        <Link to='/' className="brand-logo"><img src={logo} /></Link>
-        <Link to='/about' className="brand-logo">About</Link>
-        <Link to='/dashboard' className="brand-logo">Workouts</Link>
+        <Link to='/' className="navlogo"><img src={logo} /></Link>
+       
+       
+        <Link to='/about' >About</Link>
+
+        <Link to='/dashboard' >Workouts</Link>
+
+         
+        
         {auth.isLoaded && links}
       </div>
     </nav>

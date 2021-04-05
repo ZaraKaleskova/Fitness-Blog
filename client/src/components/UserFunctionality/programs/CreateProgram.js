@@ -26,9 +26,9 @@ class CreateProgram extends Component {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
-      <div className="container">
+      <div className="signForm">
         <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Create a New Program</h5>
+          <h3 className="grey-text text-darken-3">Create a New Program</h3>
           <div className="input-field">
             <input type="text" id='title' onChange={this.handleChange} />
             <label htmlFor="title">Program Title</label>

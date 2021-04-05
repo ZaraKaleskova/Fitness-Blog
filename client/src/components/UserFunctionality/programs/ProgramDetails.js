@@ -12,7 +12,7 @@ const ProgramDetails = (props) => {
   if (!auth.uid) return <Redirect to='/signin' /> 
   if (program) {
   return (
-    <div className="container section program-details">
+    <div className="signForm">
       <div className="card z-depth-0">
         <div className="card-content">
         <span className="card-title">{program.title}</span>
