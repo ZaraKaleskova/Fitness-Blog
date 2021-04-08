@@ -1,6 +1,9 @@
 import React from 'react'
 import ProgramSummary from './ProgramSummary'
 import {Link} from 'react-router-dom';
+import { connect } from "react-redux";
+import { compose } from "redux";
+import { firestoreConnect } from "react-redux-firebase";
 
 const ProgramList = ({programs}) => {
   return (
@@ -18,3 +21,5 @@ const ProgramList = ({programs}) => {
 }
 
 export default ProgramList;
+
+
