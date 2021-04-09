@@ -36,7 +36,7 @@ class CreateProgram extends Component {
           <div className="input-field">
             <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
             <label htmlFor="content">Program Content</label>
-          </div>
+          </div>        
           <div className="input-field">
             <button className="btn pink lighten-1">Create</button>
           </div>

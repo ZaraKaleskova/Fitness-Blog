@@ -13,6 +13,8 @@ import SignIn from "./components/UserFunctionality/auth/SignIn";
 import SignUp from "./components/UserFunctionality/auth/SignUp";
 import CreateProgram from "./components/UserFunctionality/programs/CreateProgram";
 import Articles from './components/Articles/Articles';
+import Chat from './chat'
+import AllTrainingArticles from './components/Articles/TrainingArticle/AllTrainingArticles'
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
         </Route>
         <Route path="/competing">
           <CompetitionInfo />
+        </Route>
+        <Route path="/chat">
+          <Chat />
+        </Route>
+        <Route path="/alltrainingarticles">
+          <AllTrainingArticles />
         </Route>
         <Route path="/articles" component={Articles} />
         <Route exact path="/dashboard" component={Dashboard} />

@@ -6,8 +6,9 @@ const ProgramSummary = ({program}) => {
     <div className="card z-depth-0 program-summary">
       <div className="card-content grey-text text-darken-3">
         <span className="card-title ">{program.title}</span>
-        <p>Posted by {program.authorFirstName} {program.authorLastName}</p>
-        {/* <p className="grey-text">{moment(program.createdAt.toDate()).calendar()}</p> */}
+        {/* <p>Posted by {program.authorFirstName} {program.authorLastName}</p> */}
+        <p>Posted by {program.userEmail} </p>
+        <p className="grey-text">{moment(program.createdAt.toDate()).calendar()}</p>
       </div>
     </div>
   )

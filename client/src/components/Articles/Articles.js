@@ -9,15 +9,14 @@ const Articles = ({
 {
     return(        
         <div className="innerArticles">
-        <h2 class="major">Knowledge is power</h2>
-        <h1> Hello {username} here</h1>
+        <h2 class="major">Knowledge is power</h2>      
         <p>I firmly believe in giving back to the community as much as possible, while promoting a healthy and active way of living. You can find different articles that cover a variety of subjects. New articles await you every Monday and Thursday.</p>
        
         <section class="features">
                 <TrainingArticle />
                 <NutritionArticle />
-                 <PsychologyArticle />
-                <OtherArticle /> 
+                 {/* <PsychologyArticle />
+                <OtherArticle />  */}
         </section>
       
     </div>

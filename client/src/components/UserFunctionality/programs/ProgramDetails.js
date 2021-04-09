@@ -19,7 +19,7 @@ const ProgramDetails = (props) => {
             <p>{program.content}</p>
           </div>
           <div className="card-action grey lighten-4 grey-text">
-            <div>Posted by {program.authorFirstName} {program.authorLastName}</div>
+            <div>Posted by {program.userEmail} </div>
             <div>{moment(program.createdAt.toDate()).calendar()}</div>
         </div>
       </div>
@@ -35,7 +35,7 @@ const ProgramDetails = (props) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  // console.log(state);
+ 
   const id = ownProps.match.params.id;
   const programs = state.firestore.data.programs;
   const program = programs ? programs[id] : null
