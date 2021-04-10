@@ -12,6 +12,7 @@ import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase';
 import fbConfig from './config/fbConfig'
 import firebase from 'firebase/app'
 
+
 const store = createStore(
   rootReducer,
   compose(
@@ -43,6 +44,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+
 
 
 // If you want to start measuring performance in your app, pass a function

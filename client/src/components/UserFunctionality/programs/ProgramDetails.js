@@ -48,6 +48,7 @@ const mapStateToProps = (state, ownProps) => {
 
 
 
+
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([{

@@ -15,6 +15,7 @@ import CreateProgram from "./components/UserFunctionality/programs/CreateProgram
 import Articles from './components/Articles/Articles';
 import Chat from './chat'
 import AllTrainingArticles from './components/Articles/TrainingArticle/AllTrainingArticles'
+import AllNutritionArticles from './components/Articles/NutritionArticle/AllNutritionArticles';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
         <Route path="/alltrainingarticles">
           <AllTrainingArticles />
         </Route>
+        <Route path="/allnutritionarticles">
+          <AllNutritionArticles />
+        </Route>         
         <Route path="/articles" component={Articles} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route path="/program/:id" component={ProgramDetails} />

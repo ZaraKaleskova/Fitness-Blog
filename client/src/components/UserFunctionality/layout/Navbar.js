@@ -22,7 +22,7 @@ const Navbar = (props) => {
        
        
         <Link to='/about' >About</Link>
-
+        <Link to='/articles'>Articles</Link>
         <Link to='/dashboard' >Workouts</Link>
 
          
