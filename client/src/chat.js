@@ -1,10 +1,7 @@
 import firebase from './config/fbConfig';
-// import './chat.css';
+import chatStyle from './components/assets/css/chatStyle.css'
 import { Redirect } from 'react-router-dom';
 import React, { useRef, useState } from 'react';
-
-
-
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
@@ -22,10 +19,9 @@ function Chat() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="Chat">
+    <div className={chatStyle.Chat}>
       <header>
-        <h1>Leave a message 💬</h1>
-        {/* <SignOut /> */}
+        <h1 className="chatHeader">Share your toughts ✍️ </h1>       
       </header>
 
       <section>
@@ -42,23 +38,21 @@ function Chat() {
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(25);
+  const query = messagesRef.orderBy('createdAt').limit(50);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
   const [formValue, setFormValue] = useState('');
-
-
+ 
   const sendMessage = async (e) => {
     e.preventDefault();
 
-    const { uid, photoURL } = auth.currentUser;
+    const { uid} = auth.currentUser;
 
     await messagesRef.add({
       text: formValue,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-      uid,
-      photoURL
+      uid
     })
 
     setFormValue('');
@@ -74,9 +68,9 @@ function ChatRoom() {
 
     </main>
 
-    <form onSubmit={sendMessage}>
+    <form className="chatForm" onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Leave a message 💬" />
+      <input className="chatInput" value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Leave a message 💬" />
 
       <button type="submit" disabled={!formValue}>✉️</button>
 
@@ -86,13 +80,13 @@ function ChatRoom() {
 
 
 function ChatMessage(props) {
-  const { text, uid, photoURL } = props.message;
+  const { text, uid, photoURL} = props.message;
 
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
   return (<>
-    <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
+    <div className={`message ${messageClass}`}>     
+      <img className="chatImg"src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
       <p>{text}</p>
     </div>
   </>)

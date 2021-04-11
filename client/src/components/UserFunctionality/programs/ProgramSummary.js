@@ -3,10 +3,9 @@ import moment from 'moment';
 
 const ProgramSummary = ({program}) => {
   return (
-    <div className="card z-depth-0 program-summary">
-      <div className="card-content grey-text text-darken-3">
+    <div id="programs">
+      <div className="programContent">
         <span className="card-title ">{program.title}</span>
-        {/* <p>Posted by {program.authorFirstName} {program.authorLastName}</p> */}
         <p>Posted by {program.authorFirstName} </p>
         <p className="grey-text">{moment(program.createdAt.toDate()).calendar()}</p>
       </div>

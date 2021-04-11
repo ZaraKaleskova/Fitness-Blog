@@ -1,17 +1,19 @@
+import eatingImage from './eatingImage.jpg';
+
 const EatingInfo = () => {
   return (
     <section id="wrapper">
       <header>
-        <div class="inner">
+        <div className="inner">
           <h2>Nutrition Coaching</h2>
           <p>Want to eat well and feel better? Your journey starts here!</p>
         </div>
       </header>
 
-      <div class="wrapper">
-        <div class="inner">
+      <div className="wrapper">
+        <div className="inner">
           <section>
-            <h3 class="major">All about nutrition</h3>
+            <h3 className="major">All about nutrition</h3>
             <p>
               <b>
                 Learn how to find freedom and balance via nutrition, exercise,
@@ -19,7 +21,6 @@ const EatingInfo = () => {
                 nonrestrictive macro-based nutrition coaching.
               </b>
             </p>
-            <h4>Blockquote</h4>
             <blockquote>
               “Time and health are two precious assets that we don’t recognize
               and appreciate until they have been depleted.” – Denis Waitley
@@ -30,8 +31,8 @@ const EatingInfo = () => {
           </section>
 
           <section>
-            <h3 class="major">WHAT TO EXPECT</h3>
-            <div class="row">
+            <h3 className="major">WHAT TO EXPECT</h3>
+            <div className="row">
               <p>
                 We spend 12-18+ years in school, yet we’re NEVER taught some of
                 the basics. How much to eat, how to exercise appropriately for
@@ -43,8 +44,8 @@ const EatingInfo = () => {
                 nutrition, exercise, and a healthy lifestyle.
                 <p>Here is how we will work together: </p>
               </p>
-              <div class="col-8 col-2-medium">
-                <ul class="alt">
+              <div className="col-8 col-2-medium">
+                <ul className="alt">
                   <li>A holistic approach to food, health, and wellness.</li>
                   <li>
                     A nonrestrictive macro-based eating approach. You’ll be
@@ -75,13 +76,10 @@ const EatingInfo = () => {
 
           
           <section>
-            <h3 class="major">Better you</h3>
-          
-          
-            <h4>Left &amp; Right</h4>
+            <h3 className="major">Better you</h3>
             <p>
-              <span class="image left">
-                <img src="images/pic01.jpg" alt="" />
+              <span className="image left">
+                <img src={eatingImage} alt="" />
               </span>
               Nutrition coaching will be a macro-based food approach. As we work
               together, we will make adjustments to your calories and macros
@@ -93,13 +91,11 @@ const EatingInfo = () => {
               find balance in your life, each and every day.
             </p>
             <p>
-              <span class="image right">
+              <span className="image right">
                 <img src="images/pic02.jpg" alt="" />
-              </span>
-              The overall goal is to learn from the experience! I want you to
-              learn the ‘ins and outs’ of the process so you’re able to go off
-              on your own and continue living your best life and feel amazing!
-              Want in? It’s time to start now!
+              </span>I want you to
+              learn the ‘ins and outs’ of the process and continue living your best life and feel amazing!
+              It’s time to start now!
             </p>
           </section>
         </div>

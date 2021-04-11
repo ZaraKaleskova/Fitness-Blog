@@ -25,7 +25,7 @@ class AllNutritionArticles extends React.Component {
                 <div className='container'>
                     <header>
                         <div className='wrapper'>
-                            <span className='logo'>Nutrition articles</span>
+                            <span className='logo'></span>
                         </div>
                     </header>
                     <main>

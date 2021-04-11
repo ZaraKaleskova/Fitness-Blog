@@ -178,7 +178,6 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-/* Type */
 
 	body, input, select, textarea {
 		color: #ffffff;
@@ -3420,8 +3419,6 @@ input, select, textarea {
 
 
 
-/* Wrapper */
-
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
 	}
@@ -3986,3 +3983,16 @@ input, select, textarea {
 		}
 
 	}
+
+	#programs{
+		margin: 0 auto !important; 
+		padding-left: 20%;
+	}
+
+	.postSection{
+		padding: 100px;
+		max-width: 1200px;		
+		margin: 0 auto;
+	}
+
+	

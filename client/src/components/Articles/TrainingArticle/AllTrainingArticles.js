@@ -25,7 +25,7 @@ class AllTrainingArticles extends React.Component {
                 <div className='container'>
                     <header>
                         <div className='wrapper'>
-                            <span className='logo'>Training Articles</span>
+                            <span className='logo'></span>
                         </div>
                     </header>
                     <main>

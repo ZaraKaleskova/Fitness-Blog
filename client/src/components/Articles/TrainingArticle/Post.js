@@ -9,7 +9,7 @@ const Post = ({ article }) => {
         <div className='post'>
             <h2 className='title'>{name}</h2>
             {featuredImage && <img className='featuredImage' src={featuredImage.fields.file.url} alt={name} title={name} />}
-            <section dangerouslySetInnerHTML={{ __html: postDescription }} />
+            <section className="postSection" dangerouslySetInnerHTML={{ __html: postDescription }} />
         </div>
     )
 }
